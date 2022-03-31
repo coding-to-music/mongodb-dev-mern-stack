@@ -33,7 +33,7 @@ npm start
 
 Use at your own risk; not a supported MongoDB product
 
-## Project Case study MERN app to document apps calling GitHub API
+## MERN stack example from MongoDB Developer Tutorial
 
 The note taking functionality does not work.
 
@@ -45,9 +45,9 @@ https://github.com/coding-to-music/mongodb-dev-mern-stack
 
 https://mongodb-dev-mern-stack.herokuapp.com/
 
-By pramitmarattha pramit-marattha https://github.com/pramit-marattha
+By https://github.com/mongodb-developer
 
-https://github.com/pramit-marattha/mongodb-dev-mern-stack-app
+https://github.com/mongodb-developer/mern-stack-example
 
 ## Installation:
 
@@ -121,9 +121,9 @@ main scripts
 
 ```java
 {
-  "name": "project-case-study-mern-server",
+  "name": "mongodb-dev-mern-stack-server",
   "version": "1.0.0",
-  "description": "take notes while exploring projects",
+  "description": "MongoDB Dev MERN Stack",
   "main": "index.js",
   "engines": {
     "node": "16.x"
@@ -178,13 +178,13 @@ heroku run npx browserslist@latest --update-db
 ### .env MongoDB Environment Variables
 
 ```java
-MONGODB_URI="mongodb+srv://<userid>:<password>@cluster0.zadqe.mongodb.net/mongodb-dev-mern-stack?retryWrites=true&w=majority"
+ATLAS_URI="mongodb+srv://<userid>:<password>@cluster0.zadqe.mongodb.net/mongodb-dev-mern-stack?retryWrites=true&w=majority"
 ```
 
 ### Heroku MongoDB Environment Variables
 
 ```java
-heroku config:set MONGODB_URI="mongodb+srv://<userid>:<password>@cluster0.zadqe.mongodb.net/mongodb-dev-mern-stack?retryWrites=true&w=majority"
+heroku config:set ATLAS_URI="mongodb+srv://<userid>:<password>@cluster0.zadqe.mongodb.net/mongodb-dev-mern-stack?retryWrites=true&w=majority"
 git push heroku
 ```
 
