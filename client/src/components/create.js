@@ -23,14 +23,14 @@ export default function Create() {
     // When a post request is sent to the create url, we'll add a new record to the database.
     const newPerson = { ...form };
 
-    await fetch("http://localhost:5000/record/add", {
+    // await fetch("http://localhost:5000/record/add", {
+    await fetch(dbo, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(newPerson),
-    })
-    .catch(error => {
+    }).catch((error) => {
       window.alert(error);
       return;
     });
@@ -75,7 +75,9 @@ export default function Create() {
               checked={form.level === "Intern"}
               onChange={(e) => updateForm({ level: e.target.value })}
             />
-            <label htmlFor="positionIntern" className="form-check-label">Intern</label>
+            <label htmlFor="positionIntern" className="form-check-label">
+              Intern
+            </label>
           </div>
           <div className="form-check form-check-inline">
             <input
@@ -87,7 +89,9 @@ export default function Create() {
               checked={form.level === "Junior"}
               onChange={(e) => updateForm({ level: e.target.value })}
             />
-            <label htmlFor="positionJunior" className="form-check-label">Junior</label>
+            <label htmlFor="positionJunior" className="form-check-label">
+              Junior
+            </label>
           </div>
           <div className="form-check form-check-inline">
             <input
@@ -99,7 +103,9 @@ export default function Create() {
               checked={form.level === "Senior"}
               onChange={(e) => updateForm({ level: e.target.value })}
             />
-            <label htmlFor="positionSenior" className="form-check-label">Senior</label>
+            <label htmlFor="positionSenior" className="form-check-label">
+              Senior
+            </label>
           </div>
         </div>
         <div className="form-group">
