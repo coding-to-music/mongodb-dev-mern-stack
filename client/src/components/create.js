@@ -25,7 +25,8 @@ export default function Create() {
 
     // await fetch(dbo, {
     // await fetch("http://localhost:5000/record/add", {
-    // const API_URL = `${process.env.PUBLIC_URL}record/add`;
+
+    const API_URL = `${process.env.PUBLIC_URL}record/add`;
 
     console.log("API_URL ", API_URL);
 
