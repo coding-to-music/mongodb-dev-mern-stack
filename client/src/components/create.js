@@ -24,8 +24,12 @@ export default function Create() {
     const newPerson = { ...form };
 
     // await fetch(dbo, {
+    // await fetch("http://localhost:5000/record/add", {
+    // const API_URL = `${process.env.PUBLIC_URL}record/add`;
 
-    await fetch("http://localhost:5000/record/add", {
+    console.log("API_URL ", API_URL);
+
+    await fetch(API_URL, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

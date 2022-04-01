@@ -2,6 +2,7 @@
   "name": "mongodb-dev-mern-stack-server",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://mongodb-dev-mern-stack.herokuapp.com",
   "main": "index.js",
   "engines": {
     "node": "16.x"
